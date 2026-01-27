@@ -1,6 +1,12 @@
 {
-  "scripts": {
+  "script": {
     "test": "echo \"No tests yet\"",
     "build": "echo \"No build yet\""
-  }
+  },
+
+  "scripts": {
+  "test": "jest",
+  "build": "echo Building project..."
+}
+
 }
