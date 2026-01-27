@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "build": "echo \"No build yet\""
+  }
+}
