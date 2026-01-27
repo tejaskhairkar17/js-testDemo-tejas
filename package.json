@@ -3,10 +3,11 @@
     "test": "echo \"No tests yet\"",
     "build": "echo \"No build yet\""
   },
-
   "scripts": {
-  "test": "jest",
-  "build": "echo Building project..."
-}
-
+    "test": "jest",
+    "build": "echo Building project..."
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
 }
