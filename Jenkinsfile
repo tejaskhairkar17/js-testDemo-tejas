@@ -1,18 +1,22 @@
 pipeline {
     agent any
-    tools {
-        maven 'M3'
-        jdk 'JDK11'
-    }
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/tejaskhairkar17/js-testDemo-tejas.git'
             }
         }
-        stage('Build') {
+        stage('Install Dependencies') {
             steps {
-                bat 'mvn clean install'
+                bat 'npm install'
+            }
+        }
+        stage('Run Tests / Scripts') {
+            steps {
+                // Run whatever script you have defined in package.json
+                bat 'npm test'
+                // or run a custom script
+                // bat 'npm run build'
             }
         }
     }
